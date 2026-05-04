@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Personal Homepage</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.4rem;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    section {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .info-list li {
+      margin: 8px 0;
+    }
+
+    .label {
+      display: inline-block;
+      min-width: 110px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .label {
+        display: block;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header>
+        <h1>Your Name</h1>
+        <p class="subtitle">Student / Researcher at Your Institution</p>
+      </header>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <ul class="info-list">
+          <li><span class="label">Email:</span> <a href="mailto:yourname@university.edu">ztxhh123@sjtu.edu.cn</a></li>
+          <li><span class="label">Institution:</span> Your Institution</li>
+          <li><span class="label">Location:</span> City, Country</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I am currently affiliated with Your Institution. My academic interests include
+          machine learning, natural language processing, artificial intelligence, and related areas.
+        </p>
+      </section>
+
+      <section aria-labelledby="research-heading">
+        <h2 id="research-heading">Research Interests</h2>
+        <p>
+          Machine Learning · Natural Language Processing · Artificial Intelligence
+        </p>
+      </section>
+
+      <section aria-labelledby="links-heading">
+        <h2 id="links-heading">Links</h2>
+        <p>
+          GitHub: <a href="https://github.com/your-username">https://github.com/your-username</a>
+        </p>
+      </section>
+
+      <p class="footer">Last updated: 2026</p>
+    </article>
+  </main>
+</body>
+</html>
